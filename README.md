@@ -6,10 +6,7 @@ Playlist Guard is a privacy-friendly browser extension that tracks your YouTube 
 
 It is designed for users who want a simple way to preserve playlist history without relying on an external account or server.
 
-
-<img width="512" height="512" alt="icon512" src="https://github.com/user-attachments/assets/24cb3984-bbcd-4ecb-9449-c6bd3ecb9159" />
-
-
+<img width="1024" height="1024" alt="icon1024" src="https://github.com/user-attachments/assets/a9edac8c-fad5-48a3-972f-add4e90f6c8b" />
 
 ---
 
