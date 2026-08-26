@@ -52,8 +52,97 @@ Until Playlist Guard is published on the Chrome Web Store, you can install it ma
 4. Click **Load unpacked**.
 5. Select the `extension` folder.
 
-For Brave and Chrome:
+For Brave: 
 
 ```text
 brave://extensions
+```
+For Chrome:
+```
 chrome://extensions
+```
+How it works
+
+Playlist Guard does not automatically track every playlist you visit.
+
+You choose which playlists you want to protect.
+
+For each protected playlist, Playlist Guard stores a local snapshot of its videos and compares it with future checks.
+
+If a video disappears, Playlist Guard keeps the information it previously stored so you can identify what was removed.
+
+If the video later returns, Playlist Guard records that change as well.
+
+Privacy
+
+Playlist Guard is designed to work locally.
+
+No Playlist Guard account is required
+No analytics service is included
+No advertising system is included
+Playlist data is stored locally in your browser
+Data is not sent to a Playlist Guard server
+
+Playlist Guard communicates with YouTube only when necessary to read playlist information.
+
+A complete Privacy Policy will be published before the public Chrome Web Store release.
+
+What Playlist Guard does not do
+
+Playlist Guard is not a video downloader.
+
+It does not download or archive video files.
+
+Its purpose is to preserve playlist metadata and change history so users can identify videos that disappear from their playlists.
+
+Current status
+
+Version: 0.9 Beta
+
+The extension is currently in public development and testing.
+
+The next major milestone is:
+
+Playlist Guard 1.0
+
+Planned for the first public Chrome Web Store release.
+
+Screenshots
+
+Screenshots will be added before the public 1.0 release.
+
+Project structure
+playlist-guard/
+├── extension/
+│   ├── icons/
+│   ├── background.js
+│   ├── manifest.json
+│   ├── options.html
+│   ├── popup.css
+│   ├── popup.html
+│   └── popup.js
+│
+└── README.md
+Feedback
+
+Bug reports and suggestions are welcome through GitHub Issues.
+
+If you encounter a playlist that behaves incorrectly, please include:
+
+browser used
+playlist size
+whether the check was manual or automatic
+what Playlist Guard reported
+what you expected to happen
+
+Please do not include private account information.
+
+License
+
+License information will be added before the public 1.0 release.
+
+Disclaimer
+
+Playlist Guard is an independent project and is not affiliated with, endorsed by, or sponsored by YouTube or Google.
+
+YouTube is a trademark of Google LLC.
