@@ -64,58 +64,77 @@ For Chrome:
 chrome://extensions
 ```
 
-How it works
+## How it works
 
-Playlist Guard does not automatically track every playlist you visit.
+Playlist Guard does **not** automatically track every playlist you visit.
 
 You choose which playlists you want to protect.
 
-For each protected playlist, Playlist Guard stores a local snapshot of its videos and compares it with future checks.
+For each protected playlist, Playlist Guard:
 
-If a video disappears, Playlist Guard keeps the information it previously stored so you can identify what was removed.
+1. Stores a local snapshot of the playlist's videos.
+2. Compares that snapshot with future checks.
+3. Detects when a video disappears.
+4. Keeps the information previously stored about that video so you can identify what was removed.
+5. Records the change if the video later becomes available again.
 
-If the video later returns, Playlist Guard records that change as well.
+This allows Playlist Guard to maintain a local history of changes without downloading or archiving the videos themselves.
 
-Privacy
+---
 
-Playlist Guard is designed to work locally.
+## Privacy
 
-No Playlist Guard account is required
-No analytics service is included
-No advertising system is included
-Playlist data is stored locally in your browser
-Data is not sent to a Playlist Guard server
+Playlist Guard is designed to work **locally in your browser**.
+
+* No Playlist Guard account is required.
+* No analytics service is included.
+* No advertising system is included.
+* Playlist data is stored locally in your browser.
+* Playlist data is not sent to a Playlist Guard server.
 
 Playlist Guard communicates with YouTube only when necessary to read playlist information.
 
-A complete Privacy Policy will be published before the public Chrome Web Store release.
+A complete **Privacy Policy** will be published before the public Chrome Web Store release.
 
-What Playlist Guard does not do
+---
 
-Playlist Guard is not a video downloader.
+## What Playlist Guard does not do
 
-It does not download or archive video files.
+Playlist Guard is **not a video downloader**.
 
-Its purpose is to preserve playlist metadata and change history so users can identify videos that disappear from their playlists.
+It does not:
 
-Current status
+* Download video files.
+* Archive video or audio files.
+* Create backups of YouTube media.
 
-Version: 0.9 Beta
+Its purpose is to preserve **playlist metadata and change history**, allowing users to identify videos that disappear from their playlists.
 
-The extension is currently in public development and testing.
+---
+
+## Current status
+
+**Version:** `0.9 Beta`
+
+Playlist Guard is currently in public development and testing.
 
 The next major milestone is:
 
-Playlist Guard 1.0
+### Playlist Guard 1.0
 
-Planned for the first public Chrome Web Store release.
+Version `1.0` is planned to be the first public release on the **Chrome Web Store**.
 
-Screenshots
+---
 
-Screenshots will be added before the public 1.0 release.
+## Screenshots
 
-Project structure
+Screenshots will be added before the public `1.0` release.
 
+---
+
+## Project structure
+
+```text
 playlist-guard/
 ├── extension/
 │   ├── icons/
@@ -125,29 +144,35 @@ playlist-guard/
 │   ├── popup.css
 │   ├── popup.html
 │   └── popup.js
-│
 └── README.md
+```
 
-Feedback
+---
 
-Bug reports and suggestions are welcome through GitHub Issues.
+## Feedback
+
+Bug reports and suggestions are welcome through **GitHub Issues**.
 
 If you encounter a playlist that behaves incorrectly, please include:
 
-browser used
-playlist size
-whether the check was manual or automatic
-what Playlist Guard reported
-what you expected to happen
+* Browser used.
+* Approximate playlist size.
+* Whether the check was manual or automatic.
+* What Playlist Guard reported.
+* What you expected to happen.
 
-Please do not include private account information.
+Please **do not include private account information**.
 
-License
+---
 
-License information will be added before the public 1.0 release.
+## License
 
-Disclaimer
+License information will be added before the public `1.0` release.
 
-Playlist Guard is an independent project and is not affiliated with, endorsed by, or sponsored by YouTube or Google.
+---
+
+## Disclaimer
+
+Playlist Guard is an independent project and is **not affiliated with, endorsed by, or sponsored by YouTube or Google**.
 
 YouTube is a trademark of Google LLC.
