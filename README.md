@@ -61,6 +61,7 @@ For Chrome:
 ```
 chrome://extensions
 ```
+
 How it works
 
 Playlist Guard does not automatically track every playlist you visit.
@@ -112,6 +113,7 @@ Screenshots
 Screenshots will be added before the public 1.0 release.
 
 Project structure
+
 playlist-guard/
 ├── extension/
 │   ├── icons/
@@ -123,6 +125,7 @@ playlist-guard/
 │   └── popup.js
 │
 └── README.md
+
 Feedback
 
 Bug reports and suggestions are welcome through GitHub Issues.
