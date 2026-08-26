@@ -56,3 +56,8 @@ For Brave:
 
 ```text
 brave://extensions
+
+For Chrome:
+
+```text
+chrome://extensions
