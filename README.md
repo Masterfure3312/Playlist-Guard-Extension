@@ -53,6 +53,6 @@ Until Playlist Guard is published on the Chrome Web Store, you can install it ma
 5. Select the `extension` folder.
 
 For Brave:
+
+```text
 brave://extensions
-For Chrome:
-chrome://extensions
