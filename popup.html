@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Playlist Guard</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body data-theme="neon">
+<div class="orb one"></div>
+<div class="orb two"></div>
+
+<main>
+  <header>
+    <div class="brand">
+      <div class="logo" aria-label="Playlist Guard"><img src="icons/icon128.png" alt=""></div>
+      <div>
+        <h1>Playlist Guard</h1>
+        <p id="tag"></p>
+      </div>
+    </div>
+
+    <div class="right">
+      <select id="theme" aria-label="Theme"></select>
+      <select id="lang" aria-label="Language">
+        <option value="es">ES</option>
+        <option value="en">EN</option>
+      </select>
+      <span class="version">v0.9 Beta</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="heroTitle" id="heroTitle"></div>
+    <div class="heroSub" id="heroSub"></div>
+
+    <div class="add">
+      <input id="url">
+      <button id="addBtn" class="primary"></button>
+    </div>
+
+    <div id="msg" class="status"></div>
+  </section>
+
+  <section class="activity" id="activityStrip">
+    <span class="activityDot"></span>
+    <span id="activityText"></span>
+  </section>
+
+  <nav>
+    <button class="tab active" data-tab="lib" id="libBtn"></button>
+    <button class="tab" data-tab="miss" id="missBtn"></button>
+  </nav>
+
+  <section id="lib">
+    <div class="tools">
+      <input id="search">
+      <button id="importBtn" class="ghost"></button>
+      <button id="backup" class="ghost"></button>
+      <input id="importFile" type="file" accept="application/json" hidden>
+    </div>
+    <div id="cards"></div>
+    <div id="empty" class="empty"></div>
+  </section>
+
+  <section id="miss" class="hidden">
+    <input id="missSearch" class="wide">
+    <div id="missing"></div>
+    <div id="emptyMiss" class="empty"></div>
+  </section>
+</main>
+
+<div id="toast" class="toast hidden"></div>
+
+<dialog id="deleteDialog">
+  <form method="dialog">
+    <h3 id="deleteTitle"></h3>
+    <p id="deleteBody"></p>
+    <div class="dialogActions">
+      <button value="cancel" class="ghost" id="deleteCancel"></button>
+      <button value="confirm" class="danger" id="deleteConfirm"></button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="onboarding">
+  <div class="onboardingWrap">
+    <div class="onboardingIcon"><img src="icons/icon128.png" alt=""></div>
+    <h2 id="onboardingTitle"></h2>
+    <div class="steps">
+      <div class="step"><span>1</span><p id="step1"></p></div>
+      <div class="step"><span>2</span><p id="step2"></p></div>
+      <div class="step"><span>3</span><p id="step3"></p></div>
+    </div>
+    <button id="onboardingDone" class="primary wideBtn"></button>
+  </div>
+</dialog>
+
+<script src="popup.js"></script>
+</body>
+</html>
